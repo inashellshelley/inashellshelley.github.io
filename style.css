@@ -1,0 +1,372 @@
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-size: 20px;
+        font-family: 'Ubuntu', sans-serif;
+        scroll-behavior: smooth;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .container {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Head Section */
+    
+     :root {
+        --navbar-height: 100px;
+    }
+    
+    #header {
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+    }
+    
+    #logo {
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+    }
+    
+    #logo p {
+        display: flex;
+        color: white;
+        text-transform: uppercase;
+    }
+    
+    #header ul {
+        display: flex;
+    }
+    
+    #header::before {
+        content: "";
+        background-color: maroon;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+    
+    #header ul li {
+        list-style: none;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    
+    #header ul li a {
+        display: block;
+        padding: 10px 22px;
+        border-radius: 20px;
+        color: white;
+        text-decoration: none;
+        padding-bottom: 10px;
+    }
+    
+    #header ul li a:hover {
+        color: peru;
+    }
+    
+    #header ul li a:active {
+        color: peru;
+    }
+    /* End of Head Section */
+    /* Home Section */
+    
+    #home {
+        background-image: url(https://cdn.pixabay.com/photo/2015/11/12/22/05/pizza-1041104_960_720.jpg);
+        background-size: cover;
+        background-position: top center;
+        position: relative;
+        z-index: 1;
+    }
+    
+    #home::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.3;
+        z-index: -1;
+    }
+    
+    #home h1 {
+        display: block;
+        width: fit-content;
+        font-size: 4rem;
+        position: relative;
+        color: white;
+    }
+    
+    #home .cta {
+        display: inline-block;
+        padding: 10px 30px;
+        color: beige;
+        background-color: transparent;
+        border: 2.5px solid maroon;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        margin-top: 30px;
+        transition: background-color;
+    }
+    
+    #home .cts:hover {
+        color: blanchedalmond;
+        background-color: maroon;
+    }
+    /* End of home section */
+    /* Menu section */
+    
+    #menu {}
+    
+    #menu .menu {
+        flex-direction: column;
+        text-align: center;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+    
+    #menu .menu-title {
+        font-size: 4rem;
+        font-weight: 300;
+        color: maroon;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: normal;
+        text-align: center;
+    }
+    
+    #menu .menu-down {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    #menu .menu-item1 {
+        flex-basis: 80%;
+        color: bisque;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+        border-radius: 10px;
+        background-image: url(https://cdn.pixabay.com/photo/2020/03/21/02/26/pizza-4952508_960_720.jpg);
+        background-size: cover;
+        margin: 10px 5%;
+    }
+    
+    #menu .menu-item2 {
+        flex-basis: 80%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+        border-radius: 10px;
+        background-image: url(https://cdn.pixabay.com/photo/2017/08/05/12/33/flat-lay-2583213_960_720.jpg);
+        background-size: cover;
+        margin: 10px 5%;
+    }
+    
+    #menu .menu-item3 {
+        flex-basis: 80%;
+        color: bisque;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+        border-radius: 10px;
+        background-image: url(https://media.istockphoto.com/photos/fresh-organic-summer-cocktail-made-with-sour-ginger-craft-beer-or-picture-id1153443782?s=612x612);
+        background-size: cover;
+        margin: 10px 5%;
+        position: relative;
+    }
+    /* End of Menu section */
+    /* Booking section */
+    
+    #booking {
+        position: relative;
+    }
+    
+    #booking::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+        background: url(https://cdn.pixabay.com/photo/2016/11/18/14/05/brick-wall-1834784_960_720.jpg) no-repeat center center/cover;
+    }
+    
+    #booking-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+    }
+    
+    #booking-box input,
+    #booking-box textarea {
+        width: 100%;
+        padding: 0.3rem;
+        border-radius: 9px;
+        font-size: 1.0rem;
+    }
+    
+    #booking-box form {
+        width: 40%;
+    }
+    
+    #booking-box label {
+        font-size: 1.2rem;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    #booking-box form {
+        margin-top: 50px;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    
+    #booking .btn {
+        display: inline-block;
+        padding: 10px 30px;
+        color: beige;
+        background-color: maroon;
+        border: 2.5px solid black;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        margin-top: 30px;
+    }
+    /* End of Booking section */
+    /* About section */
+    
+    #about .about {
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 100px 20px;
+    }
+    
+    #about .about::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        opacity: 2;
+        z-index: -1;
+    }
+    
+    #about .right {
+        display: block;
+        width: fit-content;
+        width: 100%;
+    }
+    
+    #about .right h1 {
+        color: maroon;
+        font-size: 4rem;
+        margin-bottom: 10px;
+    }
+    
+    #about .right h2 {
+        color: rgb(187, 121, 121);
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+        margin-bottom: 10px;
+    }
+    
+    #about .right p {
+        background-image: url(https://cdn.pixabay.com/photo/2014/10/22/17/50/bar-498420_960_720.jpg);
+        background-size: cover;
+        background-position: top center;
+        margin-top: auto;
+        margin-bottom: 20px;
+        color: white;
+        letter-spacing: 0.2rem;
+    }
+    /* End of About section */
+    /* Contact  section */
+    
+    #contact .contact {
+        flex-direction: column;
+        padding: 100px 0;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-image: url(https://cdn.pixabay.com/photo/2016/11/29/08/43/blank-1868502_960_720.jpg);
+        background-position: top center;
+        background-size: cover;
+    }
+    
+    #contact .contact h1 {
+        margin: 15px;
+        color: maroon;
+        font-size: 4rem;
+    }
+    
+    #contact .contact-items {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+    
+    #contact .contact-item {
+        width: 30%;
+        margin: 0;
+        flex-direction: row;
+    }
+    
+    #contact .contact-item .contact-info {
+        border: 4px solid maroon;
+        width: 100px;
+        height: 100px;
+        font-size: 10px;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        text-size-adjust: auto;
+    }
+    /* End of Contact section */
+    /* Footer section */
+    
+    footer {
+        background: maroon;
+        color: white;
+        padding: 9px 20px;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+    }
+    /* End of Footer section */
